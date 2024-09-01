@@ -1,0 +1,73 @@
+/* src/Game.css */
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #333; /* สีพื้นหลังของหน้าจอ */
+  color: #f5f5f5; /* สีข้อความ */
+  font-family: 'Arial', sans-serif;
+}
+
+.game-board {
+  margin: 20px;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+  background: #444; /* สีพื้นหลังของปุ่ม */
+  border: 2px solid #666; /* สีขอบของปุ่ม */
+  color: #fff; /* สีข้อความภายในปุ่ม */
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.square:hover {
+  background-color: #555; /* สีพื้นหลังของปุ่มเมื่อเอาเมาส์ไปชี้ */
+  border-color: #777; /* สีขอบของปุ่มเมื่อเอาเมาส์ไปชี้ */
+}
+
+.board-row {
+  display: flex;
+}
+
+.status {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.reset-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff; /* สีพื้นหลังของปุ่ม */
+  border: none;
+  border-radius: 8px; /* มุมปุ่มมน */
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เงาของปุ่ม */
+}
+
+.reset-button:hover {
+  background-color: #0056b3; /* สีพื้นหลังเมื่อเอาเมาส์ไปชี้ */
+  transform: translateY(-2px); /* เลื่อนปุ่มขึ้นเล็กน้อย */
+}
+
+.reset-button:active {
+  background-color: #004494; /* สีพื้นหลังเมื่อกดปุ่ม */
+  transform: translateY(0); /* ปลดการเลื่อนปุ่มขึ้น */
+}
+
+.reset-button:focus {
+  outline: none; /* ลบขอบปุ่มเมื่ออยู่ในโฟกัส */
+}
